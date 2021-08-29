@@ -1,0 +1,92 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3  classs="display-4">Welcome</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{%url 'profile' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notess.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notes
+            </h5>
+            Create Notes to refer them later. They are stored permanently until deleted
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Homework
+            </h5>
+            Add homeworks and assign them deadlines. They will be displayed prioritised by deadlines
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{%url 'todo'%}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              To Do
+            </h5>
+            Add your to-do lists for your day and remove them as you finish
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{%url 'books' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Books
+            </h5>
+            Search books here by entering ISBN number of book
+          </div>
+        </div>
+      </a>
+    </div>
+  
+
+  
+
+
+
+</section>
+
+<footer class="container text-center">
+<hr> <br>
+ 
+    <h2 class="display-4">Contact</h2>
+    
+    <a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/groups/10379184/" role="button"
+  ><i class="fab fa-linkedin-in"></i
+></a>
+
+    <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/nehabhange2?s=08" role="button"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/nehabhange" role="button"
+  ><i class="fab fa-github"></i></a>
+  <hr> <br>
+
+    
+  
+  
+
+
+</footer>
+{% endblock content %}
